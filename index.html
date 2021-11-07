@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Crud Operation</title>
+
+<body>
+    <!-- CREATE USER -->
+    <div class="table-one">
+        <h1><u>Create User</u></h1>
+        <br>
+        <input type="text" id="createName" placeholder="Enter Your Name">
+        <input type="text" id="createEmail" placeholder="Enter Your Email">
+        <input type="text" id="createAdd" placeholder="Enter Your Address">
+        <button onclick="createUser()">Create</button>
+        <br>
+    </div>
+    <!-- UPDATE USER -->
+    <div class="table-two">
+        <h1><u>Update User</u></h1>
+        <br>
+        <input type="number" id="updateId" placeholder="Enter ID">
+        <input type="text" id="updateName" placeholder="Enter Your Name">
+        <input type="text" id="updateEmail" placeholder="Enter Your Email">
+        <input type="text" id="updateAdd" placeholder="Enter Your Address">
+        <button onclick="updateUser()">Update</button>
+        <br>
+    </div>
+    <!-- DELETE USER -->
+    <div class="table-three">
+        <h1><u>Delete User</u></h1>
+        <br>
+        <input type="number" id="deleteID" placeholder="Enter ID">
+        <button onclick="deleteUser()">Delete</button>
+        <br>
+    </div>
+    <!-- GET USER -->
+    <div class="table-four">
+        <h1><u>Get User/All User</u></h1>
+        <input type="number" id="getID" placeholder="Enter ID">
+        <button onclick="getUser()">Get User</button>
+        <br>
+    </div>
+
+    <!-- TABLE FOR DISPLAY USERS -->
+    <table id="table">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Address
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tableid">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

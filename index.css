@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Libre+Franklin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Dongle&family=Roboto:wght@300&display=swap');
+body {
+    background-color: #f1f1f1;
+}
+
+.table-one, .table-two, .table-three, .table-four {
+    width: 80vw;
+    border: 2px solid black;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.table-one h1, .table-two h1, .table-three h1, .table-four h1 {
+    text-align: center;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.table-one input, .table-two input, .table-three input, .table-four input {
+    border: 3px solid grey;
+    padding: 15px 12px;
+    width: 60vw;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table-one button, .table-two button, .table-three button, .table-four button {
+    padding: 13px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:#007bff;
+    color: white;
+    transition: all 0.2s;
+    font-size: 16px;
+    border: 2px solid black;
+    margin-left: 144px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 8px;
+}
+
+.table-one button:hover, .table-two button:hover, .table-three button:hover, .table-four button:hover {
+    color: black;
+    background-color: rgb(147, 229, 243);
+}
+
+#table {
+    font-family: 'Roboto', sans-serif;
+    width: 82%;
+    border: 2px solid burlywood;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#table, th, td {
+    border: 2px solid black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media screen and (max-width: 514px) {
+    .table-one button, .table-two button, .table-three button, .table-four button {
+        width: 40vw;
+        margin-inline-start: 65px;
+    }
+    #table {
+        width: 72%;
+        margin: auto;
+        margin-top: 30px;
+        padding: 4px 3px;
+    }
+}
